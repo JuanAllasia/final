@@ -1,0 +1,3 @@
+firebase firestore por asynmock
+ver video de consideraciones 
+ver si es necesario la orden del checkout

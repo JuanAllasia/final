@@ -5,10 +5,14 @@
     align-items: center;
     text-align: center;
     margin-top: 20px;
+    border: solid #0056b3;
+    background-color: black;
+    color: white;
+
 }
 
 
-.cartEmpty {
+.divcart h1 {
     font-size: 24px;
     color: #333;
     margin-bottom: 10px;
@@ -24,18 +28,22 @@
 }
 
 
-.CartItem {
+.divcart1 {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-    width: 80%;
-    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
 }
 
 
-.divcart h3 {
+.divcart1 .CardItem {
+    margin: 10px 0;
+    
+}
+
+
+.divcart1 h3 {
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -47,17 +55,12 @@
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    margin: 10px;
 }
 
 .Button:hover {
     background-color: #0056b3;
 }
-
-
-.Option.checkout {
-    background-color: #28a745;
-}
-
-.Option.checkout:hover {
-    background-color: #1d7a3e;
+.divcart1{
+    border: solid #0056b3;
 }

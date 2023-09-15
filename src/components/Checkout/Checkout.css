@@ -1,0 +1,24 @@
+
+.Checkout {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.CheckImg {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+
+.CheckText {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+
+.Checkout p {
+    font-size: 16px;
+    color: #777;
+}
