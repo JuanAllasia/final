@@ -1,0 +1,8 @@
+.CardContainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    justify-content: center;
+    place-items: center;
+    margin: 20px;
+}

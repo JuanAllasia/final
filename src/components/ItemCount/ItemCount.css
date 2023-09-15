@@ -1,0 +1,50 @@
+
+.Counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.Controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.CounterButton {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.CounterButton:hover {
+    background-color: #0056b3;
+}
+
+.CounterNum {
+    font-size: 24px;
+    margin: 0;
+}
+
+
+.CartButton {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.CartButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
