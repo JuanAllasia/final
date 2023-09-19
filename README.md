@@ -5,7 +5,7 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=juanallasia" alt="juanallasia" /></a> </p>
 
-- 🤝actualmente estoy aprendiendo **JavaScript**
+- 🤝actualmente estoy aprendiendo **React JS**
 
 - 👨‍💻 Todos mis proyectos están disponibles en [https://github.com/JuanAllasia](https://github.com/JuanAllasia)
 

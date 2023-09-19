@@ -1,5 +1,7 @@
 import './ItemCount.css'
 import { useState } from 'react'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ItemCount = ({stock, initial, onAdd})=> {
     const[quantity, setQuantity] = useState(initial)
@@ -15,6 +17,19 @@ const ItemCount = ({stock, initial, onAdd})=> {
             setQuantity(quantity -1)
         }
     }
+    function mensaje() {
+        toast.info('🦄 agregaste los items al carrito!', {
+        position: "bottom-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
+    }
+    
 
     return(
         <div className='Counter'>
@@ -24,12 +39,11 @@ const ItemCount = ({stock, initial, onAdd})=> {
                 <button className='CounterButton' onClick={increment}>+</button>
             </div>
             <div>
-                <button className='CartButton' onClick={() => onAdd(quantity)} disabled={!stock}>
-                    Añadir al carrito
-                </button>
+            <button className='CartButton' onClick={() => { onAdd(quantity); mensaje(); }} disabled={!stock}>Agregar al carrito</button>
+            <ToastContainer />
             </div>
         </div>
     )
 }
 
-export default ItemCount
+export default ItemCount;

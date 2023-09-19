@@ -2,24 +2,27 @@ import React, {useContext} from "react";
 import { CartContext} from "../../../context/CartContext";
 
 
-const CardItem = (p) => { 
-    const {removeFromCart} = useContext (CartContext)
+const CardItem = (props) => {
+    const { removeItem } = useContext(CartContext);
+
     const handleRemove = () => {
-}
+        removeItem(props.id); 
+        console.log("Item removed!");
+    };
 
-
-return(
-    <div className="CarItem">
+    return (
+        <div className="CarItem">
         <div className="CartItemInfo">
-            <div className="CartItemDetails"> 
-                <h2>{p.name}</h2> 
-                <p>Quantity: {p.quantity}</p> 
-                <p>Price: {p.price}</p> 
-                <p>Subtotal: {p.price*p.quantity}</p> 
-                <button onClick={handleRemove}>Remove Item</button>
-            </div> 
-        </div> 
-    </div> 
-) 
-}
+            <div className="CartItemDetails">
+            <h2>{props.name}</h2>
+            <p>Quantity: {props.quantity}</p>
+            <p>Price: {props.price}</p>
+            <p>Subtotal: {props.price * props.quantity}</p>
+            <button onClick={handleRemove}>Remove Item</button>
+            </div>
+        </div>
+        </div>
+    );
+};
+
 export default CardItem;

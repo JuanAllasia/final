@@ -1,28 +1,44 @@
-import './ItemDetailContainer.css'
-import { useState, useEffect } from 'react'
-import ItemDetail from '../ItemDetail/ItemDetail'
-import { getProductById } from '../../asyncMock'
-import { useParams } from 'react-router-dom'
+import ItemDetail from "../ItemDetail/ItemDetail"
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { getDocs, collection, query, where } from "firebase/firestore";
+import { db } from "../../services/firebase/firebaseconfig";
 
 const ItemDetailContainer = () => {
-    const[product, setproduct] = useState(null)
-
-    const{itemId} = useParams()
+    const [product, setProduct] = useState(null);
+    const [loading, setLoading] = useState(true);
+    const {itemId} = useParams()
 
     useEffect(() => {
-        getProductById(itemId)
-        .then(response => {
-            setproduct(response)
-        })
-        .catch(error => {
-            console.error(error)
-        })
-    }, [])
+        setLoading(true)
+
+        const collectionRef = collection(db, "items")
+        const filteredCollectionRef = query(
+            collectionRef, 
+            where("id", "==", itemId)
+            );
+        
+        getDocs(filteredCollectionRef)
+            .then((querySnapshot) => {
+                if(!querySnapshot.empty){
+                    const doc = querySnapshot.docs[0];
+                    const data = doc.data();
+                    const productAdapted = {id: doc.id, ...data};
+                    setProduct(productAdapted);
+                } else{
+                    setProduct(null);
+                }
+            })
+            .catch((error) => {
+                console.log(error);
+            })
+            .finally(() => {
+                setLoading(false)
+            })
+    }, [itemId])
 
     return(
-        <div className='ItemDetailContainer'>
-            <ItemDetail {...product}/>
-        </div>
+        <div className="ItemDetailContainer">{loading ? ( <p>Cargando...</p>) : product ? (<ItemDetail {...product} />) : (<p>El producto no existe.</p>)}</div>
     )
 }
 

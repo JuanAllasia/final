@@ -13,12 +13,18 @@ export const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([]);
     const [totalQuantity, setTotalQuantity] = useState(0);
     const addItem = (item, quantity) => {
-        if (!isInCart(item.id)) {
-        setCart((prev) => [...prev, { ...item, quantity }]);
-        setTotalQuantity((prev) => prev + quantity);
+        if (isInCart(item.id)) {
+            setCart((prev) =>
+                prev.map((cartItem) =>
+                    cartItem.id === item.id
+                        ? { ...cartItem, quantity: cartItem.quantity + quantity }
+                        : cartItem
+                )
+            );
         } else {
-    console.error("The product is already in cart");
+            setCart((prev) => [...prev, { ...item, quantity }]);
         }
+        setTotalQuantity((prev) => prev + quantity);
     };
     
     const calculateTotal = () => {
@@ -42,7 +48,7 @@ export const CartProvider = ({ children }) => {
     };
     
         const isInCart = (itemId) => {
-        return cart.some((item) => item.id === itemId);
+        return cart.some((item) => item.id );
     };
     
         return (
