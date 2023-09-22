@@ -4,7 +4,6 @@ import { getDoc, doc, deleteDoc } from "firebase/firestore";
 import { db } from "../../service/firebase/firebaseConfig";
 import "./OrderPage.css"
 
-
 const OrderPage = () => {
     const { orderId } = useParams();
     const [orderData, setOrderData] = useState({});

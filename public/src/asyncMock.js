@@ -1,6 +1,15 @@
-export const products = [
+const products = [
     {
-        
+        id: '1',
+        name:'buzo 1',
+        price: 40000,
+        category: 'buzos',
+        img: require('./components/ItemListContainer/img/650w_DriftersPDP_Thrasher_APP_TRSH340400-080_Shot11.jpg'),
+        stock: 50,
+        description: 'buzitoo',
+    },
+    {
+        id: '2',
         name:'buzo 2',
         price: 20000,
         category: 'buzos',
@@ -9,7 +18,7 @@ export const products = [
         description: 'buzitoo',
     },
     {
-        
+        id: '9',
         name:'buzardo',
         price: 25000,
         category: 'buzos',
@@ -18,7 +27,7 @@ export const products = [
         description: 'buzitoo',
     },
     {
-        
+        id: '3',
         name:'pantalon',
         price: 13000,
         category: 'pantalones',
@@ -27,7 +36,7 @@ export const products = [
         description: 'pantaloncito',
     },
     {
-        
+        id: '4',
         name:'pantalon2',
         price: 15000,
         category: 'pantalones',
@@ -36,7 +45,7 @@ export const products = [
         description: 'pantaloncito',
     },
     {
-        
+        id: '8',
         name:'pantaloncito',
         price: 13000,
         category: 'pantalones',
@@ -45,7 +54,7 @@ export const products = [
         description: 'pantaloncito',
     },
     {
-        
+        id: '5',
         name:'remeritaa',
         price: 5500,
         category: 'remeras',
@@ -54,7 +63,7 @@ export const products = [
         description: 'remerita',
     },
     {
-        
+        id: '6',
         name:'remera carita',
         price: 8600,
         category: 'remeras',
@@ -63,7 +72,7 @@ export const products = [
         description: 'reme',
     },
     {
-        
+        id: '7',
         name:'remera we',
         price: 7600,
         category: 'remeras',

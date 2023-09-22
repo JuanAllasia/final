@@ -19,7 +19,6 @@ const CheckoutForm = ({ onConfirm }) => {
 
     return (
     <div className='divforms1'>
-        <h2>INGRESE SUS DATOS</h2>
         <form onSubmit={handleConfirm} id="form">
         <div>
             <label className="labels" htmlFor="name">Nombre</label>

@@ -6,10 +6,6 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import NavBar from './components/NavBar/NavBar'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 import './App.css'
-import { useEffect } from 'react';
-import { addDoc, collection } from 'firebase/firestore';
-import { products } from './asyncMock';
-
 
 function App() {
   return (
@@ -24,7 +20,6 @@ function App() {
           <Route path='*' element={<h1>404 NOT FOUND</h1>} />
           <Route path='/Cart' element={<Cart/>}/>
           <Route path='/Checkout' element={<Checkout/>}/>
-          
         </Routes>
         </CartProvider>
       </BrowserRouter>

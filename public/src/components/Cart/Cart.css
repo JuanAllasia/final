@@ -1,0 +1,66 @@
+
+.divcart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    border: solid #0056b3;
+    background-color: black;
+    color: white;
+
+}
+
+
+.divcart h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.Option {
+    text-decoration: none;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+
+.divcart1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.divcart1 .CardItem {
+    margin: 10px 0;
+    
+}
+
+
+.divcart1 h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.Button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.Button:hover {
+    background-color: #0056b3;
+}
+.divcart1{
+    border: solid #0056b3;
+}

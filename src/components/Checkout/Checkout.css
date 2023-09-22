@@ -1,24 +1,45 @@
 
-.Checkout {
+.contenedor2 {
     text-align: center;
-    margin-top: 20px;
+    padding: 20px;
 }
 
 
-.CheckImg {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-}
-
-
-.CheckText {
+.tittle {
     font-size: 24px;
-    margin: 10px 0;
+    color: #eb0000;
+    margin-bottom: 20px;
 }
 
 
-.Checkout p {
+.confirmation-message {
+    font-size: 18px;
+    color: #000000; 
+    margin-bottom: 20px;
+}
+
+
+.order-details-container {
+    text-align: left;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+.confirm-button {
+    background-color: #007bff; /* Color de fondo azul */
+    color: #fff; /* Color del texto blanco */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
     font-size: 16px;
-    color: #777;
+}
+.custom-pre {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+    /* Otros estilos personalizados que desees aplicar */
 }

@@ -1,0 +1,2 @@
+firebase firestore por asynmock en video se ve bien
+

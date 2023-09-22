@@ -1,0 +1,45 @@
+
+.CardDivDetail {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+.CardDetail {
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+
+.CardImgDetail {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+.CardHeaderDetail {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.CardHeaderItemDetail {
+    margin: 0;
+    font-size: 24px;
+}
+
+
+.CardInfoDetail {
+    margin-top: 10px;
+}
+
+
+.CardFooterDetail {
+    text-align: center;
+    margin-top: 20px;
+}

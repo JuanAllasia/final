@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #333;
+}
+
+nav {
+  background-color: rgb(0, 0, 0);
+  border-bottom: solid black;
+}
+
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.NavTitle {
+  font-size: 25px;
+  margin-right: 10px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.NavBarOptions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.NavBarOptionsButton{
+  margin-right: 100px;
+  padding: 8px 16px;
+  color: #000000c5;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.NavBarOptionsButton:hover{
+  text-decoration: underline;
+}
+
+.NavBarOptionsButtonActive{
+  margin-right: 100px;
+  padding: 8px 16px;
+  color: #1d1d1d;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+.searchIcon{
+  max-width: 100%;
+  width: 35px;
+  height: 35px;
+}
+
+.searchIcon:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.cartIcon{
+  max-width: 100%;
+  width: 35px;
+  height: 35px;
+}
+
+.cartIcon:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
